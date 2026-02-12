@@ -158,11 +158,43 @@ body {
     text-align: center;
 }
 
+.caixas .caixa1,
+.caixas .caixa2,
+.caixas .caixa3 {
+    display: block;
+    width: 420px;
+    height: 300px;
+    padding: 25px 24px;
+    border-radius: 12px;
+    background-color: var(--branco);
+    text-align: center;
+
+    transition: 
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border 0.35s ease;
+    
+    border: 1px solid transparent;
+}
+
 .caixa1:hover,
 .caixa2:hover,
 .caixa3:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--borda);
 }
+
+.caixas img {
+    transition: transform 0.35s ease;
+}
+
+.caixa1:hover img,
+.caixa2:hover img,
+.caixa3:hover img {
+    transform: scale(1.1);
+}
+
 
 .caixas p {
     margin: 10px 0;
@@ -264,7 +296,7 @@ body {
     margin-top: 5px;
     padding: 12px;
     line-height: 1.4;
-    resize: none; /* opcional */
+    resize: none; 
 }
 
 
